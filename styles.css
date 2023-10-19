@@ -241,20 +241,22 @@ header {
   color: #545454;
 }
 .pets_content_slider {
-  position: relative;
-  overflow: hidden;
   max-width: 1220px;
   width: 100%;
+  position: relative;
+  overflow-x: hidden;
 }
 .pets_slider {
   max-width: 990px;
   width: 100%;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
   height: 435px;
+  overflow: hidden;
+  transition: transform 1s ease-in-out;
 }
 .card {
   background: #fafafa;
@@ -267,6 +269,15 @@ header {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  flex: 0 0 calc(100% / 3);
+  transition: opacity 0.5s;
+}
+.pets_slider .card {
+  display: none; /* Сначала скрываем все карточки */
+}
+
+.pets_slider .card:nth-child(-n + 3) {
+  display: block; /* Показываем только первые 3 карточки */
 }
 .card:hover {
   transition: all 1s ease-in-out;

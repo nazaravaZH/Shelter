@@ -102,23 +102,51 @@ const petsSlider = document.querySelectorAll(".pets_slider");
 const preBtn = document.querySelectorAll(".arrow1");
 const nxtBtn = document.querySelectorAll(".arrow2");
 let containerWidth;
+let isAnimating = false;
 
 function shuffleCards(container) {
   for (let i = container.children.length; i >= 0; i--) {
     container.appendChild(container.children[(Math.random() * i) | 0]);
   }
 }
+
 petsSlider.forEach((item, i) => {
   let containerDimensions = item.getBoundingClientRect();
-  // containerWidth = containerDimensions.width;
-  shuffleCards(item);
+  containerWidth = containerDimensions.width;
+
   nxtBtn[i].addEventListener("click", () => {
-    shuffleCards(item);
-    item.scrollLeft += containerWidth;
+    if (!isAnimating) {
+      isAnimating = true;
+      item.style.transition = "transform 0.9s ease-in-out";
+      item.style.transform = `translateX(-${containerWidth + 90}px)`;
+      setTimeout(() => {
+        shuffleCards(item);
+        item.style.transition = "transform 0.9s ease-in-out";
+        item.style.transform = "translateX(0)";
+        isAnimating = false;
+      }, 900);
+    }
   });
 
   preBtn[i].addEventListener("click", () => {
-    shuffleCards(item);
-    item.scrollLeft -= containerWidth;
+    if (!isAnimating) {
+      isAnimating = true;
+      item.style.transition = "transform 0.9s ease-in-out";
+      item.style.transform = `translateX(${containerWidth + 90}px)`;
+      setTimeout(() => {
+        shuffleCards(item);
+        item.style.transition = "transform 0.9s ease-in-out";
+        item.style.transform = "translateX(0)";
+        isAnimating = false;
+      }, 900);
+    }
   });
+
+  shuffleCards(item);
 });
+
+function resetSliderPosition() {
+  petsSlider.forEach((item) => {
+    item.style.transform = "translateX(0)";
+  });
+}

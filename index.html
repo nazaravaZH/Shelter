@@ -1,64 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">    
-    <link rel="shortcut icon" href="img/icons.png" type="image/png">       
-    <link rel="stylesheet" href="styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="shortcut icon" href="img/icons.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
     <title>Shelter</title>
-    <meta name="viewport" content="width=device-width">
-</head>
-<body>  
-<main>
-<section class ="start">
-    <header>
-        <div class="menu_bg"></div>
-        <div class="header_body">
-        <a class ="logo" href="#">
-            <h1>Cozy House</h1>
-            <h2>Shelter for pets in Boston</h2>
-        </a>
-        <div class="header_burger">
-            <span></span>
-            <span class="third"></span>
+    <meta name="viewport" content="width=device-width" />
+  </head>
+  <body>
+    <main>
+      <section class="start">
+        <header>
+          <div class="menu_bg"></div>
+          <div class="header_body">
+            <a class="logo" href="#">
+              <h1>Cozy House</h1>
+              <h2>Shelter for pets in Boston</h2>
+            </a>
+            <div class="header_burger">
+              <span></span>
+              <span class="third"></span>
+            </div>
+            <nav class="header_menu">
+              <ul class="header_list">
+                <li>
+                  <a class="header_link1" href="#about">About the shelter</a>
+                </li>
+                <li><a class="header_link" href="index2.html">Our pets</a></li>
+                <li>
+                  <a class="header_link" href="#help">Help the shelter</a>
+                </li>
+                <li><a class="header_link" href="#contacts">Contacts</a></li>
+              </ul>
+            </nav>
+            <div class="blur"></div>
+          </div>
+        </header>
+        <section class="not_only">
+          <div class="start_left">
+            <h3>Not only people need a house</h3>
+            <p>
+              We offer to give a chance to a little and nice puppy with an
+              extremely wide and open heart. He or she will love you more than
+              anybody else in the world, you will see!
+            </p>
+            <a href="#friends" class="friend"> Make a friend </a>
+          </div>
+          <div class="start_right">
+            <img src="img/start-screen-puppy.png" alt="puppy" />
+          </div>
+        </section>
+      </section>
+      <section class="about">
+        <div class="about_content">
+          <div class="about_left">
+            <img src="img/about-pets.png" alt="pets" />
+          </div>
+          <div class="about_right">
+            <h3>About the shelter <br />“Cozy House”</h3>
+            <p>
+              Currently we have 121 dogs and 342 cats on our hands and
+              statistics show that only 20% of them will find a family. The
+              others will continue to live with us and will be waiting for a
+              lucky chance to become dearly loved.
+            </p>
+            <p>
+              We feed our wards with the best food and make sure that they do
+              not get sick, feel comfortable (including psychologically) and
+              well. We are supported by 87 volunteers and 28 employees of
+              various skill levels. About 12% of the animals are taken by the
+              shelter staff. Taking care of the animals, they become attached to
+              the pets and would hardly ever leave them alone.
+            </p>
+          </div>
         </div>
-        <nav class="header_menu">
-        <ul class="header_list">
-        <li><a class="header_link1" href="#about">About the shelter</a></li>
-        <li><a class="header_link" href="index2.html">Our pets</a></li>
-        <li><a class="header_link" href="#help">Help the shelter</a></li>
-        <li><a class="header_link" href="#contacts">Contacts</a></li>
-    </ul>
-</nav>
-<div class="blur"></div>
-</div>
-</header>
-<section class="not_only">
-    <div class="start_left">
-        <h3>Not only people need a house</h3>
-        <p>We offer to give a chance to a little and nice puppy with an extremely wide and open heart. He or she will love you more than anybody else in the world, you will see!</p>
-   <a href="#friends" class ="friend" > Make a friend </a>
-    </div>
-    <div class="start_right"> <img src="img/start-screen-puppy.png" alt="puppy"></div>
-</section>
-</section>
-<section class ="about">
-    <div class="about_content">
-        <div class="about_left"> <img src="img/about-pets.png" alt="pets"></div>
-        <div class="about_right">
-            <h3>About the shelter <br>“Cozy House”</h3>
-            <p>Currently we have 121 dogs and 342 cats on our hands and statistics show that only 20% of them will find a family. The others will continue to live with us and will be waiting for a lucky chance to become dearly loved.</p>
-        <p>We feed our wards with the best food and make sure that they do not get sick, feel comfortable (including psychologically) and well. We are supported by 87 volunteers and 28 employees of various skill levels. About 12% of the animals are taken by the shelter staff. Taking care of the animals, they become attached to the pets and would hardly ever leave them alone.</p>
-        </div>
-    </div>
-</section>
-<section class="our_friends" id ="friends">
-    <div class="pets_content">
-    <div class="pets_content_name"><h3>Our friends who <br>are looking for a house</h3></div> 
-    <div class="pets_content_slider">
-        <div class = "arrow1"><img src = "img/Arrow.png" alt="Arrow"></div>
-        <div class = "arrow2"><img src = "img/Arrow2.png"  alt="Arrow"></div>
-        <div class="pets_slider">
-        <div class="card" onclick="ShowModal(0, { 
+      </section>
+      <section class="our_friends" id="friends">
+        <div class="pets_content">
+          <div class="pets_content_name">
+            <h3>Our friends who <br />are looking for a house</h3>
+          </div>
+          <div class="pets_content_slider">
+            <div class="pets_slider">
+              <div
+                class="card"
+                onclick="ShowModal(0, { 
         name: 'Katrine', 
         img: 'img/pets-katrine.png', 
         type: 'Cat - British Shorthair', 
@@ -66,10 +92,16 @@
         age: '6 months',
         inoculations: 'panleukopenia',
         diseases: 'none',
-        parasites: 'none'})">
-        <img src="img/pets-katrine.png" alt="pets"> <p>Katrine</p> <button class="button_card">Learn more</button> </div>
+        parasites: 'none'})"
+              >
+                <img src="img/pets-katrine.png" alt="pets" />
+                <p>Katrine</p>
+                <button class="button_card">Learn more</button>
+              </div>
 
-        <div class="card" onclick="ShowModal(1, { 
+              <div
+                class="card"
+                onclick="ShowModal(1, { 
         name: 'Jennifer', 
         img: 'img/pets-jennifer.png', 
         type: 'Dog - Labrador', 
@@ -77,10 +109,16 @@
         age: '2 months',
         inoculations: 'none',
         diseases: 'none',
-        parasites: 'none'})">
-        <img src="img/pets-jennifer.png" alt="pets"><p>Jennifer</p> <button class="button_card">Learn more</button></div>
+        parasites: 'none'})"
+              >
+                <img src="img/pets-jennifer.png" alt="pets" />
+                <p>Jennifer</p>
+                <button class="button_card">Learn more</button>
+              </div>
 
-        <div class="card" onclick="ShowModal(2, { 
+              <div
+                class="card"
+                onclick="ShowModal(2, { 
         name: 'Woody', 
         img: 'img/pets-woody.png', 
         type: 'Dog - Golden Retriever', 
@@ -88,10 +126,16 @@
         age: '3 years 6 months',
         inoculations: 'adenovirus, distemper',
         diseases: 'right back leg mobility reduced',
-        parasites: 'none'})">
-        <img src="img/pets-woody.png" alt="pets"><p>Woody</p> <button class="button_card">Learn more</button></div>
-        
-        <div class="card" onclick="ShowModal(3, { 
+        parasites: 'none'})"
+              >
+                <img src="img/pets-woody.png" alt="pets" />
+                <p>Woody</p>
+                <button class="button_card">Learn more</button>
+              </div>
+
+              <div
+                class="card"
+                onclick="ShowModal(3, { 
         name: 'Sophia', 
         img: 'img/pets-katrine(2).png', 
         type: 'Dog - Shih tzu', 
@@ -99,10 +143,16 @@
         age: '1 month',
         inoculations: 'parvovirus',
         diseases: 'none',
-        parasites: 'none'})">
-        <img src="img/pets-katrine(2).png" alt="pets"> <p>Sophia</p> <button class="button_card">Learn more</button> </div>
+        parasites: 'none'})"
+              >
+                <img src="img/pets-katrine(2).png" alt="pets" />
+                <p>Sophia</p>
+                <button class="button_card">Learn more</button>
+              </div>
 
-        <div class="card" onclick="ShowModal(4, { 
+              <div
+                class="card"
+                onclick="ShowModal(4, { 
         name: 'Timmy', 
         img: 'img/pets-timmy.png', 
         type: 'Cat - British Shorthair', 
@@ -110,10 +160,16 @@
         age: '2 years 3 months',
         inoculations: 'calicivirus, viral rhinotracheitis',
         diseases: 'kidney stones',
-        parasites: 'none'})">
-        <img src="img/pets-timmy.png" alt="pets"> <p>Timmy</p> <button class="button_card">Learn more</button> </div>
+        parasites: 'none'})"
+              >
+                <img src="img/pets-timmy.png" alt="pets" />
+                <p>Timmy</p>
+                <button class="button_card">Learn more</button>
+              </div>
 
-        <div class="card" onclick="ShowModal(5, { 
+              <div
+                class="card"
+                onclick="ShowModal(5, { 
         name: 'Charly', 
         img: 'img/pets-charly.png', 
         type: 'Dog - Jack Russell Terrier', 
@@ -121,10 +177,16 @@
         age: '8 years',
         inoculations: 'bordetella bronchiseptica, leptospirosis',
         diseases: 'deafness, blindness',
-        parasites: 'lice, fleas'})">
-        <img src="img/pets-charly.png" alt="pets"> <p>Charly</p> <button class="button_card">Learn more</button> </div>
+        parasites: 'lice, fleas'})"
+              >
+                <img src="img/pets-charly.png" alt="pets" />
+                <p>Charly</p>
+                <button class="button_card">Learn more</button>
+              </div>
 
-        <div class="card" onclick="ShowModal(6, { 
+              <div
+                class="card"
+                onclick="ShowModal(6, { 
         name: 'Scarlett', 
         img: 'img/pets-scarlet.png', 
         type: 'Dog - Jack Russell Terrier', 
@@ -132,10 +194,16 @@
         age: '3 months',
         inoculations: 'parainfluenza',
         diseases: 'none',
-        parasites: 'none'})">
-        <img src="img/pets-scarlet.png" alt="pets"> <p>Scarlett</p> <button class="button_card">Learn more</button> </div>
+        parasites: 'none'})"
+              >
+                <img src="img/pets-scarlet.png" alt="pets" />
+                <p>Scarlett</p>
+                <button class="button_card">Learn more</button>
+              </div>
 
-        <div class="card" onclick="ShowModal(7, { 
+              <div
+                class="card"
+                onclick="ShowModal(7, { 
         name: 'Freddie', 
         img: 'img/pets-katrine(1).png', 
         type: 'Cat - British Shorthair', 
@@ -143,82 +211,148 @@
         age: '2 months',
         inoculations: 'rabies',
         diseases: 'none',
-        parasites: 'none'})">
-        <img src="img/pets-katrine(1).png" alt="pets"> <p>Freddie</p> <button class="button_card">Learn more</button> </div>
-    </div>     
-    </div>
-    <div class="get">
-    <a href="index2.html" class="get_button">Get to know the rest</a>   
-</div>
-</div>
-<div class="modal">
-    <div class="modal-img"></div>
-    <div class="infomodal">
-    <div class="modal-name"></div>
-    <div class="modal-type"></div>
-    <div class="modal-description"></div>
-    <div class="modal-age"></div>
-    <div class="modal-inoculations"></div>
-    <div class="modal-diseases"></div>
-    <div class="modal-parasites"></div>
-  </div>
-  <div class="close"> 
-    <img src="img/Vector (1).png" alt="close">
-  </div></div>
-</section>
-<section class="help" id ="help">
-    <div class="help_content">
-        <div class="help_heading"> <h3>How you can help our shelter</h3></div>
-        <div class="list_helping">
-        <div class="list">
-            <div class="list_pets"><img src = "img/Vector.png"  alt="food"> <p>Pet food</p></div>
-            <div class="list_pets"><img src = "img/transportation.png"  alt="transportation"> <p>Transportation</p></div>
-            <div class="list_pets"><img src = "img/toys.png"  alt="toys"> <p>Toys</p></div>
-            <div class="list_pets"><img src = "img/bowls-and-cups.png"  alt="Bowls"> <p>Bowls and cups</p></div>
-            <div class="list_pets"><img src = "img/shampoos.png"  alt="Shampoos"> <p>Shampoos</p></div>
-            <div class="list2_pets"><img src = "img/vitamins.png"  alt="Vitamins"> <p>Vitamins</p></div>
-            <div class="list3_pets"><img src = "img/medicines.png"  alt="Medicines"> <p>Medicines</p></div>
-            <div class="list4_pets"><img src = "img/collars-or-leashes.png"  alt="Collars"> <p>Collars / leashes</p></div>
-            <div class="list5_pets"><img src = "img/sleeping-area.png"  alt="Sleeping areas"> <p>Sleeping areas</p></div>
+        parasites: 'none'})"
+              >
+                <img src="img/pets-katrine(1).png" alt="pets" />
+                <p>Freddie</p>
+                <button class="button_card">Learn more</button>
+              </div>
+            </div>
+            <div class="arrow1"><img src="img/Arrow.png" alt="Arrow" /></div>
+            <div class="arrow2"><img src="img/Arrow2.png" alt="Arrow" /></div>
+          </div>
+
+          <div class="get">
+            <a href="index2.html" class="get_button">Get to know the rest</a>
+          </div>
         </div>
-    </div>
-    </div>
-</section>
-<section class="in_addition">
-    <div class ="donation_content">
-        <div class ="donation_left"><img src = "img/donation-dog.png"  alt="donation"></div>
-        <div class ="donation_right">
-            <h3>You can also <br>make a donation</h3>
+        <div class="modal">
+          <div class="modal-img"></div>
+          <div class="infomodal">
+            <div class="modal-name"></div>
+            <div class="modal-type"></div>
+            <div class="modal-description"></div>
+            <div class="modal-age"></div>
+            <div class="modal-inoculations"></div>
+            <div class="modal-diseases"></div>
+            <div class="modal-parasites"></div>
+          </div>
+          <div class="close">
+            <img src="img/Vector (1).png" alt="close" />
+          </div>
+        </div>
+      </section>
+      <section class="help" id="help">
+        <div class="help_content">
+          <div class="help_heading"><h3>How you can help our shelter</h3></div>
+          <div class="list_helping">
+            <div class="list">
+              <div class="list_pets">
+                <img src="img/Vector.png" alt="food" />
+                <p>Pet food</p>
+              </div>
+              <div class="list_pets">
+                <img src="img/transportation.png" alt="transportation" />
+                <p>Transportation</p>
+              </div>
+              <div class="list_pets">
+                <img src="img/toys.png" alt="toys" />
+                <p>Toys</p>
+              </div>
+              <div class="list_pets">
+                <img src="img/bowls-and-cups.png" alt="Bowls" />
+                <p>Bowls and cups</p>
+              </div>
+              <div class="list_pets">
+                <img src="img/shampoos.png" alt="Shampoos" />
+                <p>Shampoos</p>
+              </div>
+              <div class="list2_pets">
+                <img src="img/vitamins.png" alt="Vitamins" />
+                <p>Vitamins</p>
+              </div>
+              <div class="list3_pets">
+                <img src="img/medicines.png" alt="Medicines" />
+                <p>Medicines</p>
+              </div>
+              <div class="list4_pets">
+                <img src="img/collars-or-leashes.png" alt="Collars" />
+                <p>Collars / leashes</p>
+              </div>
+              <div class="list5_pets">
+                <img src="img/sleeping-area.png" alt="Sleeping areas" />
+                <p>Sleeping areas</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="in_addition">
+        <div class="donation_content">
+          <div class="donation_left">
+            <img src="img/donation-dog.png" alt="donation" />
+          </div>
+          <div class="donation_right">
+            <h3>You can also <br />make a donation</h3>
             <h4>Name of the bank / Type of bank account</h4>
-            <a href = "#" class="credit_card"><img src = "img/credit-card.svg"  alt="card"><p>8380 2880 8028 8791 7435</p></a>      
-            <p>Legal information and lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed ac diam. Praesent ultrices maximus tortor et vulputate. Interdum et malesuada fames ac ante ipsum primis in faucibus.</p>
+            <a href="#" class="credit_card"
+              ><img src="img/credit-card.svg" alt="card" />
+              <p>8380 2880 8028 8791 7435</p></a
+            >
+            <p>
+              Legal information and lorem ipsum dolor sit amet, consectetur
+              adipiscing elit. Maecenas a ipsum at libero sagittis dignissim sed
+              ac diam. Praesent ultrices maximus tortor et vulputate. Interdum
+              et malesuada fames ac ante ipsum primis in faucibus.
+            </p>
+          </div>
         </div>
-    </div>
-</section>
-</main>
-<footer id ="contacts">
-    <div class ="footer_content">
-    <div class="footer_contacts"> 
-        <h3>For questions and suggestions</h3> 
-        <div class="mail">
-            <a href="mailto:email@shelter.com" class="contact-link"><img src = "img/mail.png"  alt="mail"><p> email@shelter.com </p></a>
+      </section>
+    </main>
+    <footer id="contacts">
+      <div class="footer_content">
+        <div class="footer_contacts">
+          <h3>For questions and suggestions</h3>
+          <div class="mail">
+            <a href="mailto:email@shelter.com" class="contact-link"
+              ><img src="img/mail.png" alt="mail" />
+              <p>email@shelter.com</p></a
+            >
+          </div>
+          <div class="phone">
+            <a href="tel:+136745677554" class="contact-link"
+              ><img src="img/phone.png" alt="phone" />
+              <p>+13 674 567 75 54</p></a
+            >
+          </div>
         </div>
-        <div class="phone">
-            <a href="tel:+136745677554" class="contact-link"><img src = "img/phone.png"  alt="phone"><p> +13 674 567 75 54 </p></a>
+        <div class="footer_locations">
+          <h3>We are waiting for your visit</h3>
+          <div class="pin">
+            <a
+              href="https://goo.gl/maps/4XchoYnZBRLQYGvL9"
+              class="adress_link"
+              target="_blank"
+            >
+              <img src="img/pin.png" alt="pin" />
+              <p>1 Central Street, Boston (entrance from the store)</p></a
+            >
+          </div>
+          <div class="pin">
+            <a
+              href="https://goo.gl/maps/SnPCi1BixoLVPgCQA"
+              class="adress_link"
+              target="_blank"
+              ><img src="img/pin.png" alt="pin" />
+              <p>18 South Park, London</p></a
+            >
+          </div>
         </div>
-    </div>
-    <div class="footer_locations">
-        <h3>We are waiting for your visit</h3>
-        <div class="pin">
-           <a href="https://goo.gl/maps/4XchoYnZBRLQYGvL9" class="adress_link" target="_blank"> <img src = "img/pin.png"  alt="pin"><p>1 Central Street, Boston (entrance from the store)</p></a>
+        <div class="footer_puppy">
+          <img src="img/footer-puppy.png" alt="puppy" />
         </div>
-        <div class="pin">
-            <a href="https://goo.gl/maps/SnPCi1BixoLVPgCQA" class="adress_link" target="_blank"><img src = "img/pin.png"  alt="pin"><p>18 South Park, London </p></a>
-        </div>
-    </div>
-    <div class="footer_puppy"><img src = "img/footer-puppy.png"  alt="puppy"></div>
-</div>
-</footer>
-<script src="script.js"></script>
-</body>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>
